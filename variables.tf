@@ -74,6 +74,13 @@ variable "jenkins" {
   type = map(any)
 }
 
+######ECR Repo Names
+variable "repo_names" {
+  description = "A list of ecr repo_name"
+  type        = list(string)
+  default     = []
+}
+
 ###########EKS#########
 
 variable "eks_cluster_name" {
